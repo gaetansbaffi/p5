@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>orinoco</title>
+		<script
+			src="https://kit.fontawesome.com/9c9e3e31e7.js"
+			crossorigin="anonymous"
+		></script>
+
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+		</style>
+		<link rel="stylesheet" href="assets/styles/app.css" />
+
+		<script src="assets/scripts/app.js" defer></script>
+		<script src="assets/scripts/common.js" defer></script>
+		<script src="assets/scripts/panier.js" defer></script>
+	</head>
+	<body>
+		<nav>
+			<a href="./index.html">
+				<h1>orinoco</h1>
+			</a>
+			<a class="panier" href="panier.html"
+				><i class="fas fa-shopping-cart"><span id="item-amount">0</span></i></a
+			>
+		</nav>
+		<table>
+			<thead>
+				<tr>
+					<td>Nom</td>
+					<td>couleur</td>
+					<td>prix unitaire</td>
+					<td>Quantité</td>
+					<td>Total</td>
+					<td>supprimer l'article</td>
+				</tr>
+			</thead>
+		</table>
+		<form class="form" id="myForm">
+			<label id="firstName">
+				<input type="text" name="firstName" placeholder="Prénom" required
+			/></label>
+
+			<label id="lastName">
+				<input type="text" name="lastName" placeholder="Nom" required />
+			</label>
+
+			<label id="address">
+				<input type="text" name="address" placeholder="Adresse" required
+			/></label>
+
+			<label id="city">
+				<input type="text" name="city" placeholder="Ville" required
+			/></label>
+
+			<label id="email">
+				<input type="email" name="email" placeholder="Email" required
+			/></label>
+
+			<input value="Passer commande" name="submit" type="submit" />
+		</form>
+	</body>
+</html>
