@@ -109,8 +109,11 @@ a {
 	border: 3px solid transparent;
 }
 
-button:hover,
-.more-info:hover {
+.add-basket:hover,
+.more-info:hover,
+.submit:hover,
+#delete-cart:hover,
+.remove:hover {
 	background-color: lightblue;
 	border: lightslategray 3px solid;
 	overflow: hidden;
@@ -157,9 +160,16 @@ table tbody tr:last-of-type {
 .plus {
 	width: 1.5rem;
 	height: 1.5rem;
-	border: 1px solid black;
+	border: 2px solid transparent;
 	background-color: lightblue;
 	border-radius: 50%;
+	cursor: pointer;
+	transition: 0.5s all;
+}
+
+.minus:hover,
+.plus:hover {
+	border: 2px solid lightslategray;
 }
 
 .remove {
@@ -190,6 +200,16 @@ input {
 	border: none;
 	width: 75%;
 }
+
+.submit {
+	cursor: pointer;
+	background-color: lightblue;
+	border: 3px solid white;
+	font-weight: bolder;
+	font-size: large;
+	transition: all 0.5s;
+}
+
 form button {
 	font-size: 2rem;
 }
