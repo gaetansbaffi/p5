@@ -42,11 +42,22 @@
 		</table>
 		<form class="form" id="myForm">
 			<label id="firstName">
-				<input type="text" name="firstName" placeholder="Prénom" required
+				<input
+					type="text"
+					name="firstName"
+					placeholder="Prénom"
+					pattern="^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$"
+					required
 			/></label>
 
 			<label id="lastName">
-				<input type="text" name="lastName" placeholder="Nom" required />
+				<input
+					type="text"
+					name="lastName"
+					placeholder="Nom"
+					pattern="^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$"
+					required
+				/>
 			</label>
 
 			<label id="address">
@@ -54,7 +65,12 @@
 			/></label>
 
 			<label id="city">
-				<input type="text" name="city" placeholder="Ville" required
+				<input
+					type="text"
+					name="city"
+					placeholder="Ville"
+					pattern="^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$"
+					required
 			/></label>
 
 			<label id="email">
