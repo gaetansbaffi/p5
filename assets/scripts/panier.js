@@ -179,7 +179,7 @@ try {
 			})
 			.then((data) => {
 				let tempData = [displayCount()[1], data.orderId];
-				document.location.href = `/p5/confirmation.html?total=${tempData[0]}&orderId=${tempData[1]}`;
+				document.location.href = `/confirmation.html?total=${tempData[0]}&orderId=${tempData[1]}`;
 				return tempData;
 			});
 	});

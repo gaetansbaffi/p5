@@ -10,7 +10,7 @@ const confirmation = () => {
 <p>La valeur totale de votre commande est de:<br> <span class="total">${urlParams.get(
 				"total"
 			)}€</span></p>
-<button class="backHome" ><a href="/p5/index.html">retour à la page d'acceuil</a></button>`;
+<button class="backHome" ><a href="/index.html">retour à la page d'acceuil</a></button>`;
 			cart = [];
 		} else {
 			document.querySelector(

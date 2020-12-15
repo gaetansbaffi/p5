@@ -32,7 +32,7 @@ const showSingleProduct = async (product) => {
 		addToCart();
 		displayCount();
 	} else {
-		document.location.href = "/p5/index.html";
+		document.location.href = "/index.html";
 	}
 };
 
@@ -58,7 +58,7 @@ const addToCart = () => {
 
 		saveCart();
 		displayCount();
-		document.location.href = "/p5/index.html";
+		document.location.href = "/index.html";
 	});
 };
 
