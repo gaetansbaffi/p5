@@ -6,3 +6,4 @@ let singleProduct = {};
 let cart = [];
 const app = document.getElementById("app");
 let count = document.getElementById("item-amount");
+

@@ -5,15 +5,7 @@ const getProducts = async () => {
 		})
 		.then(function (data) {
 			for (const product of data) {
-				let tempProduct = {};
-				tempProduct.id = product._id;
-				tempProduct.imageUrl = product.imageUrl;
-				tempProduct.name = product.name;
-				tempProduct.price = product.price / 100;
-				tempProduct.description = product.description;
-				tempProduct.colors = product.colors;
-				tempProduct.count = 0;
-				products.push(tempProduct);
+				addProduct(product);
 			}
 
 			showProducts(products);
@@ -24,6 +16,20 @@ const getProducts = async () => {
 		.catch(function (err) {
 			console.log(err);
 		});
+};
+
+const addProduct = (product) => {
+	let tempProduct = {};
+	tempProduct.id = product._id;
+	tempProduct.imageUrl = product.imageUrl;
+	tempProduct.name = product.name;
+	tempProduct.price = product.price / 100;
+	tempProduct.description = product.description;
+	tempProduct.colors = product.colors;
+	tempProduct.count = 0;
+	products.push(tempProduct);
+
+	return tempProduct;
 };
 
 const showProducts = (products) => {
@@ -41,6 +47,7 @@ const showProducts = (products) => {
 		`;
 		app.innerHTML += productTemplate;
 	}
+	return app.innerHTML;
 };
 
 getProducts();

@@ -44,7 +44,6 @@ const cartBtns = () => {
 
 	for (const btn of plusBtns) {
 		btn.addEventListener("click", () => {
-			console.log("test");
 			let id = btn.parentElement.parentElement.querySelector(".remove").id;
 
 			for (const item of cart) {

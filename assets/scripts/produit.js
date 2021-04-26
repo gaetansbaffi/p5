@@ -26,7 +26,6 @@ const showSingleProduct = async (product) => {
 				singleProduct = data;
 				singleProduct.price = data.price / 100;
 				singleProduct.count = 0;
-
 				app.innerHTML += productTemplate;
 			});
 		addToCart();
@@ -51,6 +50,7 @@ const addToCart = () => {
 			singleProduct.color = color;
 
 			singleProduct.count = 1;
+			
 			cart.push(singleProduct);
 		} else {
 			line.count++;
